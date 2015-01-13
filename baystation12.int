@@ -1,0 +1,11 @@
+// BEGIN_INTERNALS
+/*
+MAP_ICON_TYPE: 0
+WINDOW: code\__HELPERS\text.dm;code\modules\admin\verbs\randomverbs.dm;code\modules\mob\living\carbon\human\life.dm;maps\_map.dm;maps\tgstation.dmm
+LAST_COMPILE_VERSION: 506.1249
+DIR: code code\__HELPERS maps 
+FILE: maps\tgstation.dmm
+LAST_COMPILE_TIME: 1420994056
+AUTO_FILE_DIR: ON
+*/
+// END_INTERNALS
