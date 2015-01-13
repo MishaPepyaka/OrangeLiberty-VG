@@ -1,30 +1,43 @@
-*.log
-*.int
-*.rsc
-*.dmb
-*.lk
-info.json
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
 
-# WinMerge backups
-*.bak
+# Folder config file
+Desktop.ini
 
-# String dumps
-*.str
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
 
-# Compiled Python doohickies
-*.pyc
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
 
-#ignore any files in config/, except those in subdirectories.
-/config/*
-!/config/*/*
+# Windows shortcuts
+*.lnk
 
-# OpenBYOND-generated crap
-/dmis
-/interface-indented
-/code-indented
-*.new.dmi
+# =========================
+# Operating System Files
+# =========================
 
-.metadata
-/bot/config.yml
-/bot/data
-/analysis
+# OSX
+# =========================
+
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
