@@ -1,17 +1,30 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+*.log
+*.int
+*.rsc
+*.dmb
+*.lk
+info.json
 
-# Custom for Visual Studio
-*.cs     diff=csharp
+# WinMerge backups
+*.bak
 
-# Standard to msysgit
-*.doc	 diff=astextplain
-*.DOC	 diff=astextplain
-*.docx diff=astextplain
-*.DOCX diff=astextplain
-*.dot  diff=astextplain
-*.DOT  diff=astextplain
-*.pdf  diff=astextplain
-*.PDF	 diff=astextplain
-*.rtf	 diff=astextplain
-*.RTF	 diff=astextplain
+# String dumps
+*.str
+
+# Compiled Python doohickies
+*.pyc
+
+#ignore any files in config/, except those in subdirectories.
+/config/*
+!/config/*/*
+
+# OpenBYOND-generated crap
+/dmis
+/interface-indented
+/code-indented
+*.new.dmi
+
+.metadata
+/bot/config.yml
+/bot/data
+/analysis
