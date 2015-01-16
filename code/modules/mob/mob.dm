@@ -870,7 +870,7 @@ var/list/slot_equipment_priority = list( \
 
 	if(msg != null)
 		msg = copytext(msg, 1, MAX_MESSAGE_LEN)
-		msg = rhtml_encode(msg)
+		msg = html_encode(msg)
 
 		flavor_text = msg
 
