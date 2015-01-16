@@ -134,7 +134,7 @@ sd_alert
 				var/html_string=list2params(L)
 				var/focus
 				if(b == default) focus = " ID=fcs"
-				html += "<A[focus] href=# onClick=\"c('[html_string]')\">[rhtml_encode(b)]</A>\
+				html += "<A[focus] href=# onClick=\"c('[html_string]')\">[html_encode(b)]</A>\
 					<BR>"
 		else	// button style choices
 			for(var/b in buttons)

@@ -31,7 +31,7 @@ var/const/MAX_SAVE_SLOTS = 8
 
 /datum/preferences
 	//doohickeys for savefiles
-	var/database/db = ("SQL/players2.sqlite")
+	var/database/db = ("players2.sqlite")
 	var/path
 	var/default_slot = 1				//Holder so it doesn't default to slot 1, rather the last one used
 	var/slot = 1
@@ -46,8 +46,6 @@ var/const/MAX_SAVE_SLOTS = 8
 	var/muted = 0
 	var/last_ip
 	var/last_id
-
-	var/be_special = 0
 
 	//game-preferences
 	var/lastchangelog = ""				//Saved changlog filesize to detect if there was a change
