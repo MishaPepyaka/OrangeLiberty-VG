@@ -17,7 +17,7 @@ turf/unsimulated/wall/splashscreen
 	layer = FLY_LAYER
 
 	New()
-		icon = file("icons/splashworks/title[rand(1,12)].gif")
+		icon = file("icons/splashworks/title[rand(1,2)].png")
 
 /turf/unsimulated/wall/other
 	icon_state = "r_wall"
