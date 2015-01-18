@@ -85,7 +85,8 @@ var/list/admin_verbs_ban = list(
 	)
 var/list/admin_verbs_sounds = list(
 	/client/proc/play_local_sound,
-	/client/proc/play_sound
+	/client/proc/play_sound,
+	/client/proc/stop_sounds
 	)
 var/list/admin_verbs_fun = list(
 	/client/proc/object_talk,
@@ -802,7 +803,6 @@ var/list/admin_verbs_mod = list(
 
 	prefs.toggles ^= CHAT_DEBUGLOGS
 	prefs.save_preferences_sqlite(src, ckey)
-	prefs.toggles = 0;
 	if (prefs.toggles & CHAT_DEBUGLOGS)
 		usr << "You now will get debug log messages"
 	else
