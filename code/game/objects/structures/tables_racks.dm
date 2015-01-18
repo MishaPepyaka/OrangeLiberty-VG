@@ -627,13 +627,33 @@
 		visible_message("<span class='danger'>[user] smashes [src] apart!</span>")
 		user.say(pick(";RAAAAAAAARGH!", ";HNNNNNNNNNGGGGGGH!", ";GWAAAAAAAARRRHHH!", "NNNNNNNNGGGGGGGGHH!", ";AAAAAAARRRGH!" ))
 		destroy()
-
+	else if(usr.a_intent == "disarm" && get_dist(user, src) <= 1 && !usr.buckled)
+		visible_message("<span class='notice'>[user] trying to clumb on the [src].</span>")
+		if(do_mob(user, get_turf(user), 8))
+			if(prob(70))
+				visible_message("<span class='notice'>[user] climbs on the [src].</span>")
+				usr.loc = src.loc
+			else
+				visible_message("<span class='warning'>[user] slipped off the edge of the [src].</span>")
+				usr.weakened += 3
+	else
+		..()
 /obj/structure/rack/attack_paw(mob/user)
 	if(M_HULK in user.mutations)
 		user.say(pick(";RAAAAAAAARGH!", ";HNNNNNNNNNGGGGGGH!", ";GWAAAAAAAARRRHHH!", "NNNNNNNNGGGGGGGGHH!", ";AAAAAAARRRGH!" ))
 		visible_message("<span class='danger'>[user] smashes [src] apart!</span>")
 		destroy()
-
+	else if(usr.a_intent == "disarm" && get_dist(user, src) <= 1 && !usr.buckled)
+		visible_message("<span class='notice'>[user] trying to clumb on the [src].</span>")
+		if(do_mob(user, get_turf(user), 8))
+			if(prob(90))
+				visible_message("<span class='notice'>[user] climbs on the [src].</span>")
+				usr.loc = src.loc
+			else
+				visible_message("<span class='warning'>[user] slipped off the edge of the [src].</span>")
+				usr.weakened += 3
+	else
+		..()
 /obj/structure/rack/attack_alien(mob/user)
 	visible_message("<span class='danger'>[user] slices [src] apart!</span>")
 	destroy()
