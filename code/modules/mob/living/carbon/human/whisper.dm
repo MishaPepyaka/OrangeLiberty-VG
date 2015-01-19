@@ -8,7 +8,7 @@
 	unheard=gender_replace(src.gender,unheard)
 	heard=gender_replace(src.gender,heard)
 
-	message = trim(copytext(strip_html_simple(message), 1, MAX_MESSAGE_LEN))
+	message = trim(copytext(strip_html_simple(sanitize(message)), 1, MAX_MESSAGE_LEN))
 
 	if (!message || silent || miming)
 		return
