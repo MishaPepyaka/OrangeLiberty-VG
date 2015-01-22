@@ -113,9 +113,8 @@
 	var/list/abilities = list()         // For species-derived or admin-given powers.
 	var/list/speak_emote = list("says") // Verbs used when speaking. Defaults to 'say' if speak_emote is null.
 	var/emote_type = 1		// Define emote default type, 1 for seen emotes, 2 for heard emotes
-
 	var/name_archive //For admin things like possession
-
+	var/footstep = 1
 	var/timeofdeath = 0.0//Living
 	var/cpr_time = 1.0//Carbon
 

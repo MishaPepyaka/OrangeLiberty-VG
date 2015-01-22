@@ -11,6 +11,15 @@ var/list/mechstep_sound = list('sound/mecha/mechstep1.ogg', 'sound/mecha/mechste
 var/list/gib_sound = list('sound/effects/gib1.ogg', 'sound/effects/gib2.ogg', 'sound/effects/gib3.ogg')
 var/list/mommicomment_sound = list('sound/voice/mommi_comment1.ogg', 'sound/voice/mommi_comment2.ogg', 'sound/voice/mommi_comment3.ogg', 'sound/voice/mommi_comment5.ogg', 'sound/voice/mommi_comment6.ogg', 'sound/voice/mommi_comment7.ogg', 'sound/voice/mommi_comment8.ogg')
 //var/list/gun_sound = list('sound/weapons/Gunshot.ogg', 'sound/weapons/Gunshot2.ogg','sound/weapons/Gunshot3.ogg','sound/weapons/Gunshot4.ogg')
+var/list/erikafootsteps_sound = list('sound/effects/footsteps/tile1.wav','sound/effects/footsteps/tile2.wav','sound/effects/footsteps/tile3.wav','sound/effects/footsteps/tile4.wav')
+var/list/concretefootsteps_sound = list('sound/effects/footsteps/concrete_step1.ogg','sound/effects/footsteps/concrete_step2.ogg','sound/effects/footsteps/concrete_step3.ogg','sound/effects/footsteps/concrete_step4.ogg','sound/effects/footsteps/concrete_step5.ogg','sound/effects/footsteps/concrete_step6.ogg','sound/effects/footsteps/concrete_step7.ogg','sound/effects/footsteps/concrete_step8.ogg')
+var/list/grassfootsteps_sound = list('sound/effects/footsteps/grass/grass1.wav','sound/effects/footsteps/grass/grass2.wav','sound/effects/footsteps/grass/grass3.wav','sound/effects/footsteps/grass/grass4.wav')
+var/list/dirtfootsteps_sound = list('sound/effects/footsteps/dirt/dirt1.wav','sound/effects/footsteps/dirt/dirt2.wav','sound/effects/footsteps/dirt/dirt3.wav','sound/effects/footsteps/dirt/dirt4.wav')
+var/list/waterfootsteps_sound = list('sound/effects/footsteps/water/slosh1.wav','sound/effects/footsteps/water/slosh2.wav','sound/effects/footsteps/water/slosh3.wav','sound/effects/footsteps/water/slosh4.wav')
+var/list/sandfootsteps_sound = list('sound/effects/footsteps/sand/sand_step1.ogg','sound/effects/footsteps/sand/sand_step2.ogg','sound/effects/footsteps/sand/sand_step3.ogg','sound/effects/footsteps/sand/sand_step4.ogg','sound/effects/footsteps/sand/sand_step5.ogg','sound/effects/footsteps/sand/sand_step6.ogg','sound/effects/footsteps/sand/sand_step7.ogg','sound/effects/footsteps/sand/sand_step8.ogg')
+var/list/woodfootsteps_sound = list('sound/effects/footsteps/wood/wood_step1.ogg','sound/effects/footsteps/wood/wood_step2.ogg','sound/effects/footsteps/wood/wood_step3.ogg','sound/effects/footsteps/wood/wood_step4.ogg','sound/effects/footsteps/wood/wood_step5.ogg','sound/effects/footsteps/wood/wood_step6.ogg','sound/effects/footsteps/wood/wood_step7.ogg','sound/effects/footsteps/wood/wood_step8.ogg')
+var/list/carpetfootsteps_sound = list('sound/effects/footsteps/carpet/carpet_step1.ogg','sound/effects/footsteps/carpet/carpet_step2.ogg','sound/effects/footsteps/carpet/carpet_step3.ogg','sound/effects/footsteps/carpet/carpet_step4.ogg','sound/effects/footsteps/carpet/carpet_step5.ogg','sound/effects/footsteps/carpet/carpet_step6.ogg','sound/effects/footsteps/carpet/carpet_step7.ogg','sound/effects/footsteps/carpet/carpet_step8.ogg')
+
 
 /proc/playsound(var/atom/source, soundin, vol as num, vary, extrarange as num, falloff)
 
@@ -91,4 +100,12 @@ var/const/SURROUND_CAP = 7
 			if ("gib") soundin = pick(gib_sound)
 			if ("mommicomment") soundin = pick(mommicomment_sound)
 			//if ("gunshot") soundin = pick(gun_sound)
+			if ("erikafootsteps") soundin = pick(erikafootsteps_sound)
+			if ("concretefootsteps") soundin = pick(concretefootsteps_sound)
+			if ("grassfootsteps") soundin = pick(grassfootsteps_sound)
+			if ("dirtfootsteps") soundin = pick(dirtfootsteps_sound)
+			if ("waterfootsteps") soundin = pick(waterfootsteps_sound)
+			if ("sandfootsteps") soundin = pick(sandfootsteps_sound)
+			if ("woodfootsteps") soundin = pick(woodfootsteps_sound)
+			if ("carpetfootsteps") soundin = pick(carpetfootsteps_sound)
 	return soundin
