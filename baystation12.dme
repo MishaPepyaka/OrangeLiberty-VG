@@ -1645,6 +1645,8 @@
 #include "code\WorkInProgress\Chinsky\ashtray.dm"
 #include "code\WorkInProgress\Cib\MedicalSideEffects.dm"
 #include "code\WorkInProgress\Cutelilduck\human_resources.dm"
+#include "code\WorkInProgress\jukebox\turntable.dm"
+#include "code\WorkInProgress\jukebox\turntable_tracks.dm"
 #include "code\WorkInProgress\kilakk\fax.dm"
 #include "code\WorkInProgress\Mini\ATM.dm"
 #include "code\WorkInProgress\Mini\atmos_control.dm"
