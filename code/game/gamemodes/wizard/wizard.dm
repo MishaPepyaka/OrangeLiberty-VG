@@ -8,7 +8,7 @@
 	name = "wizard"
 	config_tag = "wizard"
 	required_players = 2
-	required_players_secret = 10
+	required_players_secret = 5
 	required_enemies = 1
 	recommended_enemies = 1
 
