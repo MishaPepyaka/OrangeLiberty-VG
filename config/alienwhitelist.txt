@@ -9,3 +9,4 @@ pomf123 - unathi, diona
 
 # Whitelist unathi for everyone IF they're a janitor:
 job=janitor - unathi
+ - All
