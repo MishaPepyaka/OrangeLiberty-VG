@@ -143,7 +143,6 @@ Please contact me on #coderbus IRC. ~Carn x
 	else
 		if(overlays.len != overlays_standing.len)
 			overlays.len = 0
-			overlays.len = overlays_standing.len
 			icon = stand_icon
 
 			for(var/overlay in overlays_standing)
@@ -339,6 +338,8 @@ proc/get_damage_icon_part(damage_state, body_part)
 			var/icon/hair_s = new/icon("icon" = hair_style.icon, "icon_state" = "[hair_style.icon_state]_s")
 			if(hair_style.do_colouration)
 				hair_s.Blend(rgb(r_hair, g_hair, b_hair), ICON_ADD)
+			if(hair_style.additional_accessories)
+				hair_s.Blend(icon("icon" = hair_style.icon, "icon_state" = "[hair_style.icon_state]_acc"), ICON_OVERLAY)
 
 			face_standing.Blend(hair_s, ICON_OVERLAY)
 		else
